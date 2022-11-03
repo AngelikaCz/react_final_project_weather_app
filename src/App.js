@@ -4,7 +4,6 @@ import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
-      Hello Weather
       <Weather />
       <footer>
         This projects was coded by Angelika Czerwińska and it is open-sourced on{" "}
