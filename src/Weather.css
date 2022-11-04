@@ -4,6 +4,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(#3441d2, #a3a6c5);
+  height: 1000px;
 }
 
 li {
@@ -16,6 +17,10 @@ ul {
 
 .Weather {
   margin-top: 20px;
+}
+
+form {
+  margin-top: 50px;
 }
 
 .FormInput {
@@ -32,4 +37,36 @@ ul {
   background-color: var(--primary-color);
   color: white;
   padding: 8px;
+}
+
+@media (min-width: 768px) {
+  .FormInput {
+    padding: 8px;
+    margin-right: 20px;
+  }
+
+  .FormSubmit {
+    font-size: 25px;
+  }
+
+  .container {
+    display: grid;
+    max-width: 600px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr 1fr;
+    grid-template-areas:
+      "TodayForecast TodayForecast TodayForecast TodayParameters TodayParameters TodayParameters"
+      "Forecast Forecast Forecast Forecast Forecast Forecast";
+  }
+
+  #TodayForecast {
+    grid-area: TodayForecast;
+  }
+  #TodayParameters {
+    grid-area: TodayParameters;
+  }
+  #Forecast {
+    grid-area: Forecast;
+  }
 }
