@@ -38,6 +38,11 @@ form {
   color: white;
   padding: 8px;
 }
+
+h3 {
+  margin: 0 auto;
+}
+
 .NextDay {
   background-color: rgba(23, 28, 55, 0.5);
   margin: auto 2px;
@@ -53,13 +58,25 @@ form {
   .FormSubmit {
     font-size: 25px;
   }
+  .Temperature {
+    float: right;
+  }
 
+  .WindHumid,
+  .SunHours {
+    display: inline;
+    float: left;
+    margin-right: 20px;
+  }
+  .Parameters {
+    margin: auto;
+  }
   .container {
     display: grid;
     max-width: 600px;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.2fr 0.7fr;
+    grid-template-rows: 1fr 0.1fr 0.7fr;
     grid-template-areas:
       "TodayForecast TodayForecast TodayForecast TodayParameters TodayParameters TodayParameters"
       "Forecast Forecast Forecast Forecast Forecast Forecast";
@@ -67,6 +84,7 @@ form {
 
   #TodayForecast {
     grid-area: TodayForecast;
+    margin-top: 15px;
   }
   #TodayParameters {
     grid-area: TodayParameters;

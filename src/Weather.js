@@ -21,19 +21,19 @@ export default function Weather() {
             src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
             alt="cloudy icon"
           ></img>
-          <ul>
+          <ul className="Temperature">
             <li>21°</li>
             <li>Partly sunny</li>
           </ul>
         </div>
-        <div id="TodayParameters">
-          <ul>
+        <div id="TodayParameters" className="Parameters">
+          <ul className="WindHumid">
             <li>7mph</li>
             <li>Wind</li>
             <li>30%</li>
             <li>Humidity</li>
           </ul>
-          <ul>
+          <ul className="SunHours">
             <li>05:27</li>
             <li>Sunrise</li>
             <li>20:57</li>
