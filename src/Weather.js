@@ -6,8 +6,12 @@ export default function Weather() {
     <div className="Weather">
       {" "}
       <form>
-        <input type="text" placeholder="Enter your city..."></input>
-        <input type="submit" value="Search"></input>
+        <input
+          type="text"
+          placeholder="Enter your city..."
+          className="FormInput"
+        ></input>
+        <input type="submit" value="Search" className="FormSubmit"></input>
       </form>
       <h1>Paris</h1>
       <h2>Sunday, 27 August, 12:00</h2>
