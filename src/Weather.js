@@ -41,7 +41,7 @@ export default function Weather() {
           </ul>
         </div>
         <h3 id="Forecast">Forecast for next days</h3>
-        <ul>
+        <ul className="NextDay">
           <li>Monday</li>
           <li>
             {" "}
@@ -52,7 +52,7 @@ export default function Weather() {
           </li>
           <li>12°</li>
         </ul>
-        <ul>
+        <ul className="NextDay">
           <li>Tuesday</li>
           <li>
             {" "}
@@ -63,7 +63,7 @@ export default function Weather() {
           </li>
           <li>12°</li>
         </ul>
-        <ul>
+        <ul className="NextDay">
           <li>Wednesday</li>
           <li>
             {" "}
@@ -74,7 +74,7 @@ export default function Weather() {
           </li>
           <li>12°</li>
         </ul>
-        <ul>
+        <ul className="NextDay">
           <li>Thursday</li>
           <li>
             {" "}
@@ -85,7 +85,7 @@ export default function Weather() {
           </li>
           <li>12°</li>
         </ul>
-        <ul>
+        <ul className="NextDay">
           <li>Friday</li>
           <li>
             {" "}
@@ -96,7 +96,7 @@ export default function Weather() {
           </li>
           <li>12°</li>
         </ul>
-        <ul>
+        <ul className="NextDay">
           <li>Saturday</li>
           <li>
             {" "}

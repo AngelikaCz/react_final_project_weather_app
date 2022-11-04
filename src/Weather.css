@@ -38,6 +38,11 @@ form {
   color: white;
   padding: 8px;
 }
+.NextDay {
+  background-color: rgba(23, 28, 55, 0.5);
+  margin: auto 2px;
+  padding: 2px;
+}
 
 @media (min-width: 768px) {
   .FormInput {
@@ -54,7 +59,7 @@ form {
     max-width: 600px;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.2fr 1fr;
+    grid-template-rows: 1fr 0.2fr 0.7fr;
     grid-template-areas:
       "TodayForecast TodayForecast TodayForecast TodayParameters TodayParameters TodayParameters"
       "Forecast Forecast Forecast Forecast Forecast Forecast";
