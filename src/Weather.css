@@ -107,6 +107,21 @@ h3 {
   grid-area: Forecast;
 }
 
+.units {
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  bottom: 14px;
+}
+
+.link:visited {
+  color: white;
+}
+
+.link:active {
+  color: white;
+}
+
 @media (max-width: 576px) {
   .TodayIcon {
     width: 80px;
