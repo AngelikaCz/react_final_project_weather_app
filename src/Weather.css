@@ -27,10 +27,12 @@ form {
   font-size: 25px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  margin-right: 20px;
 }
 
 .FormSubmit {
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 5px;
   margin-top: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -49,69 +51,106 @@ h3 {
   padding: 2px;
 }
 
-@media (min-width: 768px) {
+.TodayIcon {
+  width: 100px;
+  margin-top: 5px;
+}
+
+.Temperature {
+  float: right;
+}
+
+.ParametersData {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.CurrentTemperature {
+  font-size: 35px;
+}
+
+.WindHumid,
+.SunHours {
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  margin-top: 30px;
+  line-height: 20px;
+}
+.Parameters {
+  margin: auto;
+}
+.container {
+  display: grid;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.1fr 0.7fr;
+  grid-template-areas:
+    "TodayForecast TodayForecast TodayForecast TodayParameters TodayParameters TodayParameters"
+    "Forecast Forecast Forecast Forecast Forecast Forecast";
+}
+
+#TodayForecast {
+  grid-area: TodayForecast;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding-right: 30px;
+  border-right: 1px solid var(--primary-color);
+}
+
+#TodayParameters {
+  grid-area: TodayParameters;
+}
+#Forecast {
+  grid-area: Forecast;
+}
+
+@media (max-width: 576px) {
+  .TodayIcon {
+    width: 80px;
+    margin-top: 5px;
+  }
+  .Day {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    height: 1600px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .FormInput {
-    padding: 8px;
-    margin-right: 20px;
+    font-size: 15px;
   }
 
   .FormSubmit {
-    font-size: 25px;
-  }
-
-  .TodayIcon {
-    width: 100px;
-    margin-top: 5px;
-  }
-
-  .Temperature {
-    float: right;
-  }
-
-  .ParametersData {
-    font-size: 20px;
-    font-weight: 500;
-  }
-
-  .CurrentTemperature {
-    font-size: 35px;
-  }
-
-  .WindHumid,
-  .SunHours {
-    display: inline;
-    float: left;
-    margin-right: 20px;
-    margin-top: 30px;
-    line-height: 20px;
-  }
-  .Parameters {
-    margin: auto;
-  }
-  .container {
-    display: grid;
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 15px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.1fr 0.7fr;
-    grid-template-areas:
-      "TodayForecast TodayForecast TodayForecast TodayParameters TodayParameters TodayParameters"
-      "Forecast Forecast Forecast Forecast Forecast Forecast";
+    font-size: 15px;
   }
 
   #TodayForecast {
-    grid-area: TodayForecast;
-    margin-top: 20px;
-    margin-left: 50px;
-    padding-right: 30px;
-    border-right: 1px solid var(--primary-color);
+    margin: 0 auto;
+    border-right: none;
+    border-bottom: 1px solid var(--primary-color);
   }
 
-  #TodayParameters {
-    grid-area: TodayParameters;
+  .Temperature {
+    margin-left: 30px;
   }
-  #Forecast {
-    grid-area: Forecast;
+  .TodayIcon {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  .NextDay {
+    width: 90px;
+    margin: 10px auto;
   }
 }
