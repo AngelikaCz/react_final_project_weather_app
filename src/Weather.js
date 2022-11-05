@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
-export default function Weather() {
+export default function Weather(props) {
   const [ready, setReady] = useState(false);
   const [weatherData, setWeatherData] = useState({});
 
@@ -15,8 +16,8 @@ export default function Weather() {
       humidity: response.data.main.humidity,
       mintemp: Math.round(response.data.main.temp_min),
       maxtemp: Math.round(response.data.main.temp_max),
+      date: new Date(response.data.dt * 1000),
     });
-
     setReady(true);
   }
 
@@ -33,7 +34,9 @@ export default function Weather() {
           <input type="submit" value="Search" className="FormSubmit"></input>
         </form>
         <h1>Paris</h1>
-        <h2>Sunday, 27 August, 12:00</h2>
+        <h2>
+          <FormattedDate date={weatherData.date} />
+        </h2>
         <div className="container">
           <div id="TodayForecast">
             <img
