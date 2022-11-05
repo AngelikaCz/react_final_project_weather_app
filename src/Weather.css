@@ -95,7 +95,7 @@ h3 {
 #TodayForecast {
   grid-area: TodayForecast;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 30px;
   padding-right: 30px;
   border-right: 1px solid var(--primary-color);
 }
