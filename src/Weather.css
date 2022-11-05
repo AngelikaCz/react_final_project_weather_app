@@ -92,6 +92,7 @@ h3 {
     display: grid;
     max-width: 600px;
     margin: auto;
+    margin-bottom: 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.1fr 0.7fr;
     grid-template-areas:

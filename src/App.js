@@ -11,6 +11,7 @@ function App() {
           href="https://github.com/AngelikaCz/react_final_project_weather_app"
           target="_blank"
           rel="noreferrer"
+          className="GitHubLink"
         >
           GitHub
         </a>
