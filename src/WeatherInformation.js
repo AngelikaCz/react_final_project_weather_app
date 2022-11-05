@@ -4,7 +4,7 @@ import FormattedDate from "./FormattedDate";
 export default function WeatherInformation(props) {
   return (
     <div className="WeatherInformation">
-      <h1>Paris</h1>
+      <h1>{props.data.city}</h1>
       <h2>
         <FormattedDate date={props.data.date} />
       </h2>
