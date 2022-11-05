@@ -40,7 +40,7 @@ form {
 }
 
 h3 {
-  margin: 0 auto;
+  margin: 10 auto;
 }
 
 .NextDay {
@@ -58,8 +58,23 @@ h3 {
   .FormSubmit {
     font-size: 25px;
   }
+
+  .TodayIcon {
+    width: 100px;
+    margin-top: 5px;
+  }
+
   .Temperature {
     float: right;
+  }
+
+  .ParametersData {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .CurrentTemperature {
+    font-size: 35px;
   }
 
   .WindHumid,
@@ -67,6 +82,8 @@ h3 {
     display: inline;
     float: left;
     margin-right: 20px;
+    margin-top: 30px;
+    line-height: 20px;
   }
   .Parameters {
     margin: auto;
@@ -84,8 +101,12 @@ h3 {
 
   #TodayForecast {
     grid-area: TodayForecast;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-right: 30px;
+    border-right: 1px solid var(--primary-color);
   }
+
   #TodayParameters {
     grid-area: TodayParameters;
   }

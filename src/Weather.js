@@ -20,23 +20,26 @@ export default function Weather() {
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
             alt="cloudy icon"
+            className="TodayIcon"
           ></img>
           <ul className="Temperature">
-            <li>21°</li>
+            <li className="CurrentTemperature">21°C</li>
             <li>Partly sunny</li>
           </ul>
         </div>
         <div id="TodayParameters" className="Parameters">
           <ul className="WindHumid">
-            <li>7mph</li>
+            <li className="ParametersData">7mph</li>
             <li>Wind</li>
-            <li>30%</li>
+            <br />
+            <li className="ParametersData">30%</li>
             <li>Humidity</li>
           </ul>
           <ul className="SunHours">
-            <li>05:27</li>
+            <li className="ParametersData">05:27</li>
             <li>Sunrise</li>
-            <li>20:57</li>
+            <br />
+            <li className="ParametersData">20:57</li>
             <li>Sunset</li>
           </ul>
         </div>
