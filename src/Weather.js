@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
-import FormattedDate from "./FormattedDate";
+import WeatherInformation from "./WeatherInformation";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -33,108 +33,7 @@ export default function Weather(props) {
           ></input>
           <input type="submit" value="Search" className="FormSubmit"></input>
         </form>
-        <h1>Paris</h1>
-        <h2>
-          <FormattedDate date={weatherData.date} />
-        </h2>
-        <div className="container">
-          <div id="TodayForecast">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-              alt="cloudy icon"
-              className="TodayIcon"
-            ></img>
-            <ul className="Temperature">
-              <li className="CurrentTemperature">
-                {weatherData.temperature}°C
-              </li>
-              <li>{weatherData.description.toUpperCase()}</li>
-            </ul>
-          </div>
-          <div id="TodayParameters" className="Parameters">
-            <ul className="WindHumid">
-              <li className="ParametersData">{weatherData.wind}mph</li>
-              <li>Wind</li>
-              <br />
-              <li className="ParametersData">{weatherData.humidity}%</li>
-              <li>Humidity</li>
-            </ul>
-            <ul className="MinMax">
-              <li className="ParametersData">{weatherData.mintemp}°</li>
-              <li>Min temp</li>
-              <br />
-              <li className="ParametersData">{weatherData.maxtemp}°</li>
-              <li>Max temp</li>
-            </ul>
-          </div>
-          <h3 id="Forecast">Forecast for next days</h3>
-          <ul className="NextDay">
-            <li className="Day">Monday</li>
-            <li>
-              {" "}
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                alt={weatherData.description}
-              ></img>
-            </li>
-            <li>12°</li>
-          </ul>
-          <ul className="NextDay">
-            <li className="Day">Tuesday</li>
-            <li>
-              {" "}
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                alt="cloudy icon"
-              ></img>
-            </li>
-            <li>12°</li>
-          </ul>
-          <ul className="NextDay">
-            <li className="Day">Wednesday</li>
-            <li>
-              {" "}
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                alt="cloudy icon"
-              ></img>
-            </li>
-            <li>12°</li>
-          </ul>
-          <ul className="NextDay">
-            <li className="Day">Thursday</li>
-            <li>
-              {" "}
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                alt="cloudy icon"
-              ></img>
-            </li>
-            <li>12°</li>
-          </ul>
-          <ul className="NextDay">
-            <li className="Day">Friday</li>
-            <li>
-              {" "}
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                alt="cloudy icon"
-              ></img>
-            </li>
-            <li>12°</li>
-          </ul>
-          <ul className="NextDay">
-            <li className="Day">Saturday</li>
-            <li>
-              {" "}
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-                alt="cloudy icon"
-              ></img>
-            </li>
-            <li>12°</li>
-          </ul>
-        </div>
+        <WeatherInformation data={weatherData} />
       </div>
     );
   } else {
