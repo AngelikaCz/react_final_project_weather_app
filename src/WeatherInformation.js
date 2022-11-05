@@ -11,8 +11,8 @@ export default function WeatherInformation(props) {
       <div className="container">
         <div id="TodayForecast">
           <img
-            src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
-            alt="cloudy icon"
+            src={props.data.iconUrl}
+            alt={props.data.description}
             className="TodayIcon"
           ></img>
           <ul className="Temperature">
