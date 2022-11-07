@@ -1,12 +1,11 @@
 import React from "react";
-import "./Weather.css";
+import "./WeatherForecast.css";
 
 export default function WeatherForecast(props) {
   return (
-    <div>
-      <h3 id="Forecast">Forecast for next days</h3>
-      <ul className="NextDay">
-        <li className="Day">Monday</li>
+    <div className="ForecastContainer">
+      <ul className="NextDay" id="NextDay">
+        <li className="Day">Mon</li>
         <li>
           {" "}
           <img
@@ -16,8 +15,8 @@ export default function WeatherForecast(props) {
         </li>
         <li>12°</li>
       </ul>
-      <ul className="NextDay">
-        <li className="Day">Tuesday</li>
+      <ul className="NextDay" id="NextDay">
+        <li className="Day">Tue</li>
         <li>
           {" "}
           <img
@@ -27,8 +26,8 @@ export default function WeatherForecast(props) {
         </li>
         <li>12°</li>
       </ul>
-      <ul className="NextDay">
-        <li className="Day">Wednesday</li>
+      <ul className="NextDay" id="NextDay">
+        <li className="Day">Wed</li>
         <li>
           {" "}
           <img
@@ -38,8 +37,8 @@ export default function WeatherForecast(props) {
         </li>
         <li>12°</li>
       </ul>
-      <ul className="NextDay">
-        <li className="Day">Thursday</li>
+      <ul className="NextDay" id="NextDay">
+        <li className="Day">Thu</li>
         <li>
           {" "}
           <img
@@ -49,8 +48,8 @@ export default function WeatherForecast(props) {
         </li>
         <li>12°</li>
       </ul>
-      <ul className="NextDay">
-        <li className="Day">Friday</li>
+      <ul className="NextDay" id="NextDay">
+        <li className="Day">Fri</li>
         <li>
           {" "}
           <img
@@ -60,8 +59,8 @@ export default function WeatherForecast(props) {
         </li>
         <li>12°</li>
       </ul>
-      <ul className="NextDay">
-        <li className="Day">Saturday</li>
+      <ul className="NextDay" id="NextDay">
+        <li className="Day">Sat</li>
         <li>
           {" "}
           <img

@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #171c37;
+}
+
+.NextDay {
+  background-color: rgba(23, 28, 55, 0.5);
+  padding: 10px;
+  margin: 5px;
+}
+
+.ForecastContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+#NextDay {
+  grid-area: NextDay;
+}

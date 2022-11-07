@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import "./WeatherInformation.css";
 
 export default function WeatherInformation(props) {
   return (
@@ -37,6 +38,7 @@ export default function WeatherInformation(props) {
             <li>Max temp</li>
           </ul>
         </div>
+        <h3 id="Forecast">Forecast for next days</h3>
       </div>
     </div>
   );
