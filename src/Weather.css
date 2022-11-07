@@ -72,6 +72,7 @@ form {
   }
 
   .container {
+    max-width: 100px;
     display: flex;
     flex-direction: column;
   }
@@ -87,19 +88,19 @@ form {
   #TodayForecast {
     margin: 0 auto;
     border-right: none;
-    border-bottom: 1px solid var(--primary-color);
+    text-align: center;
   }
 
-  .Temperature {
-    margin-left: 30px;
-  }
   .TodayIcon {
-    margin-left: 50px;
     margin-top: 10px;
   }
 
   .NextDay {
-    width: 90px;
+    max-width: 50px;
     margin: 10px auto;
+  }
+
+  .ForecastContainer li {
+    font-size: 13px;
   }
 }
