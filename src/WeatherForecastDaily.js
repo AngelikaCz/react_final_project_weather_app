@@ -1,8 +1,9 @@
 import React from "react";
+import "./WeatherForecastDaily.css";
 
 export default function WeatherForecastDaily(props) {
   function forecastTemperature() {
-    let temperature = Math.round(props.data.main.temp);
+    let temperature = Math.round(props.data.temp.day);
     return `${temperature}°`;
   }
 
