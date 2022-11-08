@@ -7,10 +7,19 @@ export default function WeatherForecastDaily(props) {
     return `${temperature}°`;
   }
 
+  function day() {
+    let date = new Date(props.data.dt * 1000);
+    let day = date.getDay();
+
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+    return days[day];
+  }
+
   return (
     <div className="ForecastContainer">
       <ul className="NextDay" id="NextDay">
-        <li className="Day">Mon</li>
+        <li className="Day">{day()}</li>
         <li>
           {" "}
           <img
