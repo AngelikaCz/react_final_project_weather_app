@@ -1,7 +1,19 @@
+import axios from "axios";
 import React from "react";
 import "./WeatherForecast.css";
 
 export default function WeatherForecast(props) {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+
+  let lat = props.coordinates.lat;
+  let lon = props.coordinates.lon;
+  let apiKEY = "dee9a420d2a7b5a314d3260f8ca83eea";
+  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKEY}&units=metric`;
+
+  axios.get(apiURL).then(handleResponse);
+
   return (
     <div className="ForecastContainer">
       <ul className="NextDay" id="NextDay">
