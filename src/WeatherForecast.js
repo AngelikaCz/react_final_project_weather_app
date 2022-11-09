@@ -12,15 +12,27 @@ export default function WeatherForecast(props) {
   }
 
   if (ready) {
-    return <WeatherForecastDaily data={forecast[0]} />;
+    return (
+      <div>
+        {forecast.map(function (dailyForecast, index) {
+          if (index < 5) {
+            return (
+              <div key={index}>
+                <WeatherForecastDaily data={dailyForecast} />
+              </div>
+            );
+          }
+        })}
+      </div>
+    );
   } else {
+    let lat = props.coordinates.lat;
+    let lon = props.coordinates.lon;
+    let apiKEY = "8ca7dd4e61360b90fb66918853670e48";
+    let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKEY}&units=metric`;
+
+    axios.get(apiURL).then(handleResponse);
+
+    return null;
   }
-  let lat = props.coordinates.lat;
-  let lon = props.coordinates.lon;
-  let apiKEY = "8ca7dd4e61360b90fb66918853670e48";
-  let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKEY}&units=metric`;
-
-  axios.get(apiURL).then(handleResponse);
-
-  return null;
 }
