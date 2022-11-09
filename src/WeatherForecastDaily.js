@@ -22,7 +22,7 @@ export default function WeatherForecastDaily(props) {
   }
 
   return (
-    <div className="ForecastContainer">
+    <div>
       <ul className="NextDay" id="NextDay">
         <li className="Day">{day()}</li>
         <li>

@@ -2,21 +2,18 @@
   --primary-color: #171c37;
 }
 
+.ForecastContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
 .NextDay {
   background-color: rgba(23, 28, 55, 0.5);
   padding: 10px;
   margin: 5px;
-}
-
-.ForecastContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  max-width: 600px;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
-#NextDay {
-  grid-area: NextDay;
+  max-width: 90px;
 }
