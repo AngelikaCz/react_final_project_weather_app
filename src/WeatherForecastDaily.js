@@ -17,7 +17,7 @@ export default function WeatherForecastDaily(props) {
   }
 
   function iconUrl() {
-    let URL = `http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
+    let URL = `https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`;
     return `${URL}`;
   }
 
