@@ -21,7 +21,7 @@ export default function Weather(props) {
       maxtemp: Math.round(response.data.main.temp_max),
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
     setReady(true);
   }
