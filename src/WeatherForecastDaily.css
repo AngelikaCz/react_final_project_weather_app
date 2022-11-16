@@ -18,6 +18,10 @@
   max-width: 90px;
 }
 
+.forecastIcon {
+  max-width: 80px;
+}
+
 @media screen and (max-width: 576px) {
   .ForecastContainer {
     display: flex;

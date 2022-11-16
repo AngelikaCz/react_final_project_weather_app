@@ -27,7 +27,11 @@ export default function WeatherForecastDaily(props) {
         <li className="Day">{day()}</li>
         <li>
           {" "}
-          <img src={iconUrl()} alt={props.data.weather[0].description}></img>
+          <img
+            className="forecastIcon"
+            src={iconUrl()}
+            alt={props.data.weather[0].description}
+          ></img>
         </li>
         <li>{forecastTemperature()}</li>
       </ul>
