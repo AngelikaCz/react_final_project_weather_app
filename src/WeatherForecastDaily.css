@@ -17,3 +17,16 @@
   margin: 5px;
   max-width: 90px;
 }
+
+@media screen and (max-width: 576px) {
+  .ForecastContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .NextDay {
+    margin: 5px;
+  }
+}
