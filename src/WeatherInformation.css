@@ -4,11 +4,12 @@
 
 h3 {
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 .TodayIcon {
   width: 100px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .Temperature {
@@ -60,4 +61,25 @@ h3 {
 }
 #Forecast {
   grid-area: Forecast;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  h2,
+  h3 {
+    font-size: 18px;
+  }
+
+  .container {
+    display: flex;
+    direction: column;
+  }
+  #TodayForecast {
+    border-bottom: 1px solid var(--primary-color);
+    border-right: none;
+    margin: 0 auto;
+  }
 }
