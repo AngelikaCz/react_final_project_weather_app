@@ -12,6 +12,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
           className="GitHubLink"
+          title="GitHub Link"
         >
           GitHub
         </a>
