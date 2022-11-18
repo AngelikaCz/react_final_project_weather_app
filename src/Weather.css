@@ -4,7 +4,8 @@
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(#3441d2, #a3a6c5);
-  height: 800px;
+  height: 100%;
+  background-repeat: no-repeat;
 }
 
 li {
@@ -67,9 +68,6 @@ form {
 }
 
 @media (max-width: 500px) {
-  body {
-    height: 900px;
-  }
   .container {
     max-width: 100px;
     display: flex;
