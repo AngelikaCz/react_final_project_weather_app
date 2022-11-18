@@ -2,11 +2,13 @@ body {
   text-align: center;
 }
 
-footer .GitHubLink:visited {
+footer .GitHubLink:visited,
+footer .linkedinLink:visited {
   color: white;
 }
 
-footer .GitHubLink:hover {
+footer .GitHubLink:hover,
+footer .linkedinLink:hover {
   color: #171c37;
   text-decoration: none;
 }
