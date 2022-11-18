@@ -58,16 +58,6 @@ form {
 }
 
 @media (max-width: 576px) {
-  .TodayIcon {
-    width: 80px;
-    margin-top: 5px;
-  }
-  .Day {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 500px) {
   .container {
     max-width: 100px;
     display: flex;
