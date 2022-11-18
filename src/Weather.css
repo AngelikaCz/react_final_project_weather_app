@@ -1,11 +1,13 @@
 :root {
   --primary-color: #171c37;
 }
-body {
+html {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(#3441d2, #a3a6c5);
-  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 li {
